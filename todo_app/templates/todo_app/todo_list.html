@@ -1,0 +1,32 @@
+{% extends "todo_app/base.html" %}
+{% block content %}
+  <h3 class = "to-do-header">Here are your Tasks!</h3>
+  <div class="container">
+  <form action="" method="post">
+      {{form.work}}
+      {% csrf_token %}
+      <button class = "btn-1" type="submit"><i class = "fas fa-arrow-right"></i></button>
+  </form>
+  <div class="task-container">
+      {% for task in tasks %}
+        <div class="task-div">
+            {% if task.complete == True %}
+            <div class="buttons">
+            <a href = "{% url 'update' task.pk %}"><button class = "update">Update</button></a>
+            <a href = "{% url 'delete' task.pk %}"><button class = "trash"><i class = "fas fa-trash"></i></button></a>
+            </div>
+            <strike>{{task.work}}</strike>
+            <h5>Hello there</h5>
+            {% else %}
+            <div class="buttons">
+            <a href = "{% url 'update' task.pk %}"><button class = "update">Update</button></a>
+            <a href = "{% url 'delete' task.pk %}"><button class = "trash"><i class = "fas fa-trash"></i></button></a>
+            </div>
+            <span>{{task.work}}</span>
+            {% endif %}
+            
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock content %}

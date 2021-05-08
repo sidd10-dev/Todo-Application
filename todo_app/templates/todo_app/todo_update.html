@@ -1,0 +1,12 @@
+{% extends "todo_app/base.html" %}
+{% block content %}
+<h2 class = "update-header">Update Your Task ({{task.work}})</h2>
+<div class="container update-container">
+  
+  <form action="" method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+      <button type="submit" class = "update update-2">UPDATE</button>
+  </form>
+</div>
+{% endblock content %}
