@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim';
+    
+}
+body{
+    background-color: #000;
+}
+.container{
+    background-color: #586F7C;
+    padding: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+}
+.to-do-header{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    color: #DEFFF2;
+}
+.work{
+    width: 92%;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+.work::placeholder{
+    font-size: 1.25rem;
+}
+.btn-1{
+    width: 5%;
+    height: 3.2rem;
+    font-size: 1rem;
+    background-color: #000;
+    border: 0.1rem #fff solid;
+}
+.btn-1 i{
+    color: #fff;
+}
+.task-container{
+    margin-top: 3rem;
+}
+.task-div{
+    background-color: #000;
+    width: 98%;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    text-align: center;
+    display: flex;
+    border-bottom: 0.1rem #586F7C solid;
+}
+.buttons{
+    margin-left: 3rem;
+}
+.task-div button{
+    padding: 0.5rem;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.update{
+    background-color: #65B891;
+    border: 0.2rem #00241B solid;
+    transition: 0.5s;
+}
+.trash{
+    background-color: #eba29d;
+    border: 0.1rem #FF220C solid;
+    transition: 0.5s;
+}
+.trash i{
+    font-size: 0.8rem;
+    color: #000;
+    transition: 0.5s;
+}
+.update:hover{
+    border: 0.2rem #65B891 solid;
+    background-color: #00241B;
+    color: #fff;
+}
+.trash:hover{
+    border: 0.1rem #eba29d solid;
+    background-color: #FF220C;
+}
+.trash:hover i{
+    color: white;
+}
+.task-div span, .task-div strike{
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    color: #DEFFF2;
+}
+.update-container{
+    text-align: center;
+}
+.update-2{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.update-header{
+    color: #DEFFF2;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.delete-container{
+    text-align: center;
+}
+.delete-header{
+    margin-bottom: 2rem;
+}
+.yes{
+    padding: 0.5rem;
+    font-size: 1rem;
+    transform: translateX(-1rem);
+    transform-origin: left;
+    cursor: pointer;
+}
+.no{
+    padding: 0.5rem;
+    font-size: 1rem;
+    transform: translateX(1rem);
+    transform-origin: right;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.no:hover{
+    color: white;
+}
